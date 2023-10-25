@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SW2.1</string>
+    <string name="forget">
+        Forgot password?
+    </string>
+    <string name="login">Login</string>
+    <string name="title_activity_map">map</string>
+</resources>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createNewPass">
+
+    <ImageButton
+        android:id="@+id/backicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        android:background="@color/white"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/constWelcom"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create a new password"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="62dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="you'll use this password to access your account."
+                android:textSize="15sp"
+                android:shadowColor="@color/Red"
+                android:shadowRadius="1.5"
+                android:textColor="@color/DarkRed"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/constWelcom"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="1dp"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="12dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/passwordForgot"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangel"
+                android:drawableEnd="@drawable/baseline_visibility_off_24"
+                android:elevation="20dp"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:paddingHorizontal="10dp"
+                android:textSize="14sp"
+                app:boxStrokeColor="#A70303"
+                app:hintTextColor="@color/DarkGray"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:drawableTint="@color/DarkGray"
+                android:drawablePadding="5dp"
+                />
+
+
+            <EditText
+                android:id="@+id/confirmPassForgot"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangel"
+                android:drawableEnd="@drawable/baseline_visibility_off_24"
+                android:elevation="20dp"
+                android:hint=" confirm password"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:paddingHorizontal="10dp"
+                android:textSize="14sp"
+                app:boxStrokeColor="#A70303"
+                app:hintTextColor="@color/DarkGray"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:drawableTint="@color/DarkGray"
+                android:drawablePadding="5dp"
+
+                />
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Countinuebutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/loginbutt"
+                    android:singleLine="true"
+                    android:text="Countinue"
+                    android:paddingHorizontal="20dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
